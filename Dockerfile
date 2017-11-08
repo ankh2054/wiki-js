@@ -10,6 +10,9 @@ ENV ALPINE_VERSION=3.6
 #   * nodejs-npm: Required for Wikijs install
 #   * bash: Required for Wikijs install
 
+# Set work directory for WikiJS install
+WORKDIR /var/wiki
+
 # Replace with your email address:
 ENV WIKI_ADMIN_EMAIL charles@structa.co.uk
 
