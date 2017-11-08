@@ -38,3 +38,4 @@ EXPOSE 3000
 # Entrypoint
 ADD start.sh /
 RUN chmod u+x /start.sh
+CMD /start.sh
