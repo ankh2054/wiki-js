@@ -33,7 +33,7 @@ RUN apk --update add --no-cache $PACKAGES  \
 # Replace your-config.yml with the path to your config file:
 ADD config-structa.yml /var/wiki/config.yml
 
-EXPOSE 3000
+EXPOSE 80
 
 # Entrypoint
 ADD start.sh /
