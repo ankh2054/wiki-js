@@ -11,6 +11,13 @@ To start NGING proxy
 
 ## Todo:
 1. Configure Mongodb. (mongod starts config, but compains about missing /data/db.)
+Below might be useful to create database.
+```
+mongo <<EOF
+use wiki
+quit()
+EOF
+```
 2. Instasll default Mongodb database.
 3. INSTALL NGINX-PROXY
 4. Create DNS entry for wikijs, so that nginx-proxy can point DNS entry to container (container needs to expose port 80)
