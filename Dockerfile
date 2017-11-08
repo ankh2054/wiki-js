@@ -33,6 +33,7 @@ RUN apk --update add --no-cache $PACKAGES  \
 # Replace your-config.yml with the path to your config file:
 ADD config-structa.yml /var/wiki/config.yml
 
+# Expose port 80 for nginx-proxy
 EXPOSE 80
 
 # Entrypoint
