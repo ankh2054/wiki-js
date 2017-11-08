@@ -5,6 +5,9 @@ To Build from GIT
 
 ```docker build https://github.com/ankh2054/wiki-js.git -t wikijs```
 
+To start NGING proxy
+
+```docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro etopian/nginx-proxy```
 
 ## Todo:
 1. Configure Mongodb. (mongod starts config, but compains about missing /data/db.)
