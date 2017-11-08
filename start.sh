@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 
 # Install Wiki-JS
 
-npm install wiki.js@latest
+curl -sSo- https://wiki.js.org/install.sh | bash
