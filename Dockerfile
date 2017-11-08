@@ -7,6 +7,8 @@ ENV ALPINE_VERSION=3.6
 #   * mongodb: MongoDB to act as DB.
 #   * Git: Git to store wiki-js documents
 #   * Curl: Curl for downloads.
+#   * nodejs-npm: Required for Wikijs install
+#   * bash: Required for Wikijs install
 
 # Replace with your email address:
 ENV WIKI_ADMIN_EMAIL charles@structa.co.uk
@@ -17,6 +19,8 @@ ENV PACKAGES="\
   mongodb \
   git \
   curl \
+  nodejs-npm \
+  bash \
 "
 
 RUN apk --update add --no-cache $PACKAGES  \
