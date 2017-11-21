@@ -27,8 +27,7 @@ install_wikijs() {
 configure_mongodb() {
     # Create the MongoDB and assign permissions  
 	mkdir -p /data/db
-	chmod -R 0700 /data/db
-    chown -R mongodb:mongodb /data/db
+	chown -R mongodb:mongodb /data/db
 
 	# Start mongoDB
 	mongod --fork --logpath /var/log/mongod.log
@@ -41,6 +40,7 @@ EOF
 
 	# Stop the mongoDB service
 	mongod --dbpath /data/db --shutdown
+	chown -R mongodb:mongodb /data/db
 
 }
 
