@@ -41,6 +41,6 @@ ADD files/supervisord.conf /etc/supervisord.conf
 EXPOSE 3000
 
 # Entrypoint
-ADD start.sh /
-RUN chmod u+x /start.sh
-CMD /start.sh
+ADD start2.sh /
+RUN chmod u+x /start2.sh
+CMD /start2.sh
