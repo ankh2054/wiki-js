@@ -24,7 +24,7 @@ WIKI_PORT = Port for WikiiJS to listen on
  docker run --name wikijs -d \
  -e VIRTUAL_HOST=wikijs.domain.com \
  -e WIKI_HOST=wikijs.domain.com \
- -e WIKI_TITLE=Wiki Title \
+ -e WIKI_TITLE="Wiki Title" \
  -e WIKI_PORT=3000 \
  wikijs \
  
