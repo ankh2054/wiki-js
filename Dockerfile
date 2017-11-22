@@ -35,7 +35,7 @@ RUN apk --update add --no-cache $PACKAGES  \
 # Add files
 ADD files/supervisord.conf /etc/supervisord.conf
 # Replace your-config.yml with the path to your config file:
-ADD files/config-structa.yml /var/wiki/config.yml
+# ADD files/config-structa.yml /var/wiki/config.yml
 
 # Expose port 3000 for Wikijs
 EXPOSE 3000
