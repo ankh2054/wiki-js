@@ -21,7 +21,7 @@ install_wikijs() {
 
 # Creating config File
 
-cat /var/wiki/config.yml <<EOF
+cat > /var/wiki/config.yml <<EOF
 title: ${WIKI_TITLE}
 host: ${WIKI_HOST}
 port: ${WIKI_PORT}
