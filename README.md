@@ -12,20 +12,23 @@ To start NGING proxy
 
 To Start WikiJS container
 
- ```docker run -e VIRTUAL_HOST=wikijs.domain.com --name wikijs -d wikijs```
+ENV Variables
 
-## Todo:
-1. Configure Mongodb. (mongod starts config, but compains about missing /data/db.)
-Below might be useful to create database.
-```
-mongo <<EOF
-use wiki
-quit()
-EOF
-```
-2. Instasll default Mongodb database.
-3. INSTALL NGINX-PROXY
-4. Create DNS entry for wikijs, so that nginx-proxy can point DNS entry to container (container needs to expose port 80)
-5. Ensure that wikijs is runninfg on port 80
-6. Configure wikijs to point to GIt using credentials or ssh key (do manually, as security risk to host on github)
+WIKI_HOST = Full public path to the site, without the trailing slash
+
+WIKI_TITLE = Title of the WIKI
+
+WIKI_PORT = Port for WikiiJS to listen on
+
+ ```docker run --name wikijs -d \
+ -e VIRTUAL_HOST=wikijs.domain.com \
+ -e WIKI_HOST=wikijs.domain.com \
+ -e WIKI_TITLE=Wiki Title \
+ -e WIKI_PORT=3000 \
+ wikijs \
+
+ ```
+ 
+
+
 
