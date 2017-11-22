@@ -1,18 +1,18 @@
 # wiki-js
 
 
-##To Build from GIT
+## To Build from GIT
 
 ```docker build https://github.com/ankh2054/wiki-js.git -t wikijs```
 
-##To start NGING proxy
+## To start NGING proxy
 
 ```docker run -d -p 80:80 -v /var/run/docker.sock:/tmp/docker.sock:ro etopian/nginx-proxy```
 
 
-##To Start WikiJS container
+## To Start WikiJS container
 
-###ENV Variables
+### ENV Variables
 
 * **WIKI_HOST** = Full public path to the site, without the trailing slash
 * **WIKI_TITLE** = Title of the WIKI
