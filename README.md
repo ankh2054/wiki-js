@@ -12,7 +12,7 @@ To start NGING proxy
 
 To Start WikiJS container
 
- ```docker run -e VIRTUAL_HOST=wikijs.domain.com -name wikijs -d wikijs```
+ ```docker run -e VIRTUAL_HOST=wikijs.domain.com --name wikijs -d wikijs```
 
 ## Todo:
 1. Configure Mongodb. (mongod starts config, but compains about missing /data/db.)
