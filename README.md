@@ -34,3 +34,9 @@
 ## To Do
 
 1. Create github ENV variable to auto configure github account within config.yml
+2. WikiJS does not automatically create admin user, so you need to frsit run the following to create.
+ * Stop WikiJS ```supervisorctl stop wikijs```
+ * Start new configuration ```node wiki configure```
+ * Access you WikiJs abd follow instructions & Save.
+ * Restart WikiJS ```supervisorctl start wikijs```
+ * Access WikiJS and grant Guest Access.
