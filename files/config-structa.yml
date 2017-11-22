@@ -23,7 +23,7 @@ host: http://localhost
 # ---------------------------------------------------------------------
 # To use process.env.PORT, comment the line below:
 
-port: 80
+port: 3000
 
 # ---------------------------------------------------------------------
 # Data Directories
