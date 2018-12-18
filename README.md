@@ -18,6 +18,7 @@ WikiJA-docker sets up a container running WikiJS  based on variables provided. I
 * **WIKI_HOST** = Full public path to the site, without the trailing slash
 * **WIKI_TITLE** = Title of the WIKI
 * **WIKI_PORT** = Port for WikiiJS to listen on
+* **WIKI_ADMIN_EMAIL** = WikiJS admin email
 
  ```
  docker run --name wikijs -d \
@@ -25,6 +26,7 @@ WikiJA-docker sets up a container running WikiJS  based on variables provided. I
  -e WIKI_HOST=http://wikijs.domain.com \
  -e WIKI_TITLE="Wiki Title" \
  -e WIKI_PORT=3000 \
+ -e WIKI_ADMIN_EMAIL=admin@example.com \
  wikijs \
  
  ```
