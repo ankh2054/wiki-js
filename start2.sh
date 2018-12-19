@@ -33,9 +33,9 @@ uploads:
   maxOtherFileSize: 100
 lang: en
 langRtl: false
-public: false
+public: true
 auth:
-  defaultReadAccess: false
+  defaultReadAccess: true
   local:
     enabled: true
   google:
